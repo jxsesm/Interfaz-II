@@ -1,5 +1,5 @@
 # Interfaz II
-### Ejercicio n°1 Arduino: "Hola, Mundo!"
+##### Ejercicio n°1 Arduino: "Hola, Mundo!"
 
 ```js
 void setup() {
@@ -104,4 +104,5 @@ void loop() {
   digitalWrite(LED_5, HIGH);  // Rojo peatones encendido
   delay(2000); // 2 segundos
 }
+// resistencia para LED: roja (150) amarillo (140) verde (130) OM 
 ```
