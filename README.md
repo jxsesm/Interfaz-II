@@ -46,6 +46,8 @@ void loop() {
   }
 }
 ```
+<a
+h-ref= "https://raw.githubusercontent.com/jxsesm/Interfaz-II/refs/heads/main/Control%20por%20pulsador.png"> Control por pulsador. </a>
 ##### Ejercicio n°4 Arduino: LED con potenciómetro
 ``` js
 void setup() {
