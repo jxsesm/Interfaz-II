@@ -92,7 +92,7 @@ void loop() {
   }
 }
 ```
-### Ejercicio n°4 Arduino: LED con potenciómetro
+### Ejercicio n°5 Arduino: LED con potenciómetro
 ``` js
 void setup() {
   pinMode(9, OUTPUT);  // Pin PWM (símbolo ~)
