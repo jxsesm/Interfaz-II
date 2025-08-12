@@ -11,6 +11,7 @@ void loop() {
   // No es necesario poner nada en el loop para este ejemplo
 }
 ```
+img scr= 
 
 
 ##### Ejercicio n°2 Arduino: LED parpadeante
@@ -32,6 +33,7 @@ void loop() {   // Se repite infinitamente
   
 }
 ```
+<img scr= " " width="719" hight="613" />
 ##### Ejercicio n°3 Arduino: Control por pulsador 
 ``` js
 void setup() {
@@ -46,9 +48,7 @@ void loop() {
   }
 }
 ```
-<a
-h-ref= "https://raw.githubusercontent.com/jxsesm/Interfaz-II/refs/heads/main/Control%20por%20pulsador.png"> Control por pulsador. </a>
-##### Ejercicio n°4 Arduino: LED con potenciómetro
+<img src= "https://raw.githubusercontent.com/jxsesm/Interfaz-II/refs/heads/main/Control%20por%20pulsador.png" width= "719" height= "613"/>
 ``` js
 void setup() {
   pinMode(9, OUTPUT);  // Pin PWM (símbolo ~)
@@ -59,6 +59,19 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 } // cambiar resistencia a Om
 ```
+##### Ejercicio n°4 Arduino: LED con potenciómetro 
+```js
+void setup() {
+  pinMode(9, OUTPUT);  // Pin PWM (símbolo ~)
+}
+void loop() {
+  int valor = analogRead(A0);           // Leer potenciómetro (0-1023)
+  int brillo = map(valor, 0, 1023, 0, 255);  // Convertir a rango PWM
+  analogWrite(9, brillo);               // Ajustar brillo
+} // cambiar resistencia a Om
+```
+<img src= "https://raw.githubusercontent.com/jxsesm/Interfaz-II/refs/heads/main/LED%20con%20potenci%C3%B3metro.png" width= "719" height= "613"/>
+
 ##### Ejercicio n°5 Arduino: Semáforo
 
 ```js
@@ -108,3 +121,4 @@ void loop() {
 }
 // resistencia para LED: roja (150) amarillo (140) verde (130) OM 
 ```
+<img scr= " https://raw.githubusercontent.com/jxsesm/Interfaz-II/refs/heads/main/Sem%C3%A1foro.png" width="719" hight= "613"/>
