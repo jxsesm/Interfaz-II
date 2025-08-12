@@ -57,7 +57,7 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 } // cambiar resistencia a Om
 ```
-### Ejercicio n°5 Arduino: Semáforo
+##### Ejercicio n°5 Arduino: Semáforo
 
 ```js
 // C++ code - Semáforo Autos y Peatones
