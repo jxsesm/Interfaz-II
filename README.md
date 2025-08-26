@@ -100,25 +100,37 @@ void loop() {
   digitalWrite(LED_3, HIGH);  // Verde autos encendido
   digitalWrite(LED_4, LOW);   // Verde peatones apagado
   digitalWrite(LED_5, HIGH);  // Rojo peatones encendido
-  delay(5000); // 5 segundos
+  delay(10000); // 10 segundos 
 
   // 🚦 Fase 2: Amarillo autos, peatones siguen en rojo
   digitalWrite(LED_3, LOW);   // Verde autos apagado
   digitalWrite(LED_2, HIGH);  // Amarillo autos encendido
-  delay(2000); // 2 segundos
+  delay(4000);// 4 segundos
   digitalWrite(LED_2, LOW);   // Amarillo autos apagado
 
   // 🚦 Fase 3: Rojo autos, verde peatones
   digitalWrite(LED_1, HIGH);  // Rojo autos encendido
   digitalWrite(LED_5, LOW);   // Rojo peatones apagado
   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(5000); // 5 segundos
+  delay(6000);// 6 segundos 
+  digitalWrite(LED_4,LOW); // Verde peaton apagado 
+  delay(1000); //1 segundo
+  digitalWrite(LED_4,HIGH); // Verde peaton prendido
+  delay(1000); //1 segundo 
+  digitalWrite (LED_4,LOW); // Verde peaton apagado 
+  delay(1000); // 1 segundo
+  digitalWrite (LED_4,HIGH);// Verde peaton prendido
+  delay(1000); // 1 segundo 
+  digitalWrite (LED_4,LOW); // Verde peaton apagado 
+  delay(1000); // 1 segundo
+  
+
 
   // 🚦 Fase 4: Rojo autos, rojo peatones (tiempo intermedio)
   digitalWrite(LED_4, LOW);   // Verde peatones apagado
   digitalWrite(LED_5, HIGH);  // Rojo peatones encendido
-  delay(2000); // 2 segundos
+  delay(0); // 0 segundos
 }
-// resistencia para LED: roja (150) amarillo (140) verde (130) OM 
+
 ```
 <img scr= " https://raw.githubusercontent.com/jxsesm/Interfaz-II/refs/heads/main/Sem%C3%A1foro.png" width="719" hight= "613"/>
